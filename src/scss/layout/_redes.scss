@@ -1,0 +1,17 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.redes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    &-contenedor{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        background-size: cover;
+        border-radius: 50%;
+        text-align: center;
+        justify-content: center;
+    }
+}
