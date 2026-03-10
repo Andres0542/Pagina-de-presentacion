@@ -1,0 +1,26 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.proyectos {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.imagen-proyecto {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    &-compilador {
+        background-image: url("../imagenes/compilador.webp");
+    }
+    &-python {
+        background-image: url("../imagenes/python.webp");
+    }
+    &-servidor {
+        background-image: url("../imagenes/cisco.webp");
+    }
+}

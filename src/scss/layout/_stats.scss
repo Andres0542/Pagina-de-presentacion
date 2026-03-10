@@ -1,0 +1,45 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+.stats{
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+    padding: 4rem 2rem;
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+
+
+    &-contenedor {
+        grid-template-rows: repeat(8,1fr);
+        gap: 5rem;
+    }
+}
+
+.stats-barra {
+    // 1. Estilo base (el "riel" vacío)
+    width: 100%; // Mejor usar 100% para que se adapte al contenedor
+    max-width: 50rem;
+    height: 1.5rem; // Un poco más alta para que se vea bien
+    background-color: #e5e5e5; // Color gris de fondo para lo no completado
+    border-radius: 1rem; // Opcional: bordes redondeados
+    margin-bottom: 2rem;
+    
+    // 2. El Gradiente (común para todas)
+    background-image: linear-gradient(to right, v.$verde, v.$amarillo);
+    background-repeat: no-repeat;
+
+    // 3. Los Modificadores (solo cambian el ancho del gradiente)
+    &-50 {
+        @extend .stats-barra; // Copia los estilos base
+        background-size: 50% 100%;
+    }
+    &-75 {
+        @extend .stats-barra; // Copia los estilos base
+        background-size: 75% 100%;
+    }
+}
