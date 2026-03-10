@@ -12,12 +12,16 @@ Para ver mi pagina web simplemente entras al archivo index.html
 Si buscas ejecutar el proyecto, clona la rama main para la ultima version de mi pagina estable.
 Una vez clonada, entras a la carpeta y dentro de estas abres un cmd o una terminal e instalas las dependencias:
 
-```npm install```
+```sh
+npm install
+```
 
 Para trabajar con mis archivos de estilos SCSS, utilizaras el compilador de scss a css. Para mantenerlo funcionando 
 automaticamente mientras trabajas, realiza:
 
-```npm run dev```
+```sh
+npm run dev
+```
 
 
 
