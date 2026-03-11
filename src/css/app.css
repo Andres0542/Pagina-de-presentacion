@@ -527,6 +527,11 @@ footer {
   background-color: #e5e5e5;
   border-radius: 1rem;
   margin-bottom: 2rem;
+}
+.stats-barra h4:hover, .stats-barra-75 h4:hover, .stats-barra-50 h4:hover {
+  cursor: pointer;
+}
+.stats-barra, .stats-barra-75, .stats-barra-50 {
   background-image: linear-gradient(to right, #4CB8B3, #fdda00);
   background-repeat: no-repeat;
 }
@@ -564,15 +569,21 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
+  align-items: center;
 }
 .redes-contenedor {
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-  background-size: cover;
+  height: 15rem;
+  width: 15rem;
   border-radius: 50%;
-  text-align: center;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aqua;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.redes-contenedor:hover {
+  transform: scale(1.1);
+  background-color: #fdda00;
 }
 
 /*# sourceMappingURL=app.css.map */

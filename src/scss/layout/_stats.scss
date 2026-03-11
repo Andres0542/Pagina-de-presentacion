@@ -28,7 +28,9 @@
     background-color: #e5e5e5; // Color gris de fondo para lo no completado
     border-radius: 1rem; // Opcional: bordes redondeados
     margin-bottom: 2rem;
-    
+    h4:hover {
+        cursor: pointer;
+    }
     // 2. El Gradiente (común para todas)
     background-image: linear-gradient(to right, v.$verde, v.$amarillo);
     background-repeat: no-repeat;
