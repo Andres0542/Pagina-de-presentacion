@@ -2,9 +2,8 @@
 @use '../base/variables' as v;
 
 .proyectos {
-    display: grid;
+    @include m.grid(3, 5rem);
     text-align: center;
-    grid-template-columns: repeat(3,1fr);
 }
 
 
@@ -13,6 +12,13 @@
     height: 200px;
     background-size: cover;
     background-position: center;
+    
+    &:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
     border-radius: 1rem;
     &-compilador {
         background-image: url("../imagenes/compilador.webp");

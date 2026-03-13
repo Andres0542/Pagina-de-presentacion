@@ -6,15 +6,21 @@
     color: v.$blanco;
     text-align: center;
     padding: 4rem 2rem;
-
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    @include m.grid(2, 5rem);
+    place-items: center;
+    
     &-contenedor {
-        width: 95%;
+        width: 100%;
         max-width: 120rem;
         margin: 0 auto;
         @include m.tablet {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 5rem;
+            
+            //display: grid;
+            //grid-template-columns: repeat(2, 1fr);
+            //gap: 5rem;
         }
     }
 

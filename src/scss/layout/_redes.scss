@@ -1,15 +1,12 @@
 @use '../base/mixins' as m;
 @use '../base/variables' as v;
 
-.redes_contenedor {
-  
-}
 .redes{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    align-items: center;
+    place-items: center;
     &-contenedor{
+        cursor: pointer;
         height: 15rem;
         width: 15rem;
         border-radius: 50%;

@@ -19,6 +19,22 @@ document.getElementById('linux').addEventListener('click', () => {
     document.getElementById('texto').textContent = "He estado en las distribuciones mas usadas de Linux, como Ubuntu, Debian, CentOS, NixOS, Fedora, Arch. He configurado servidores web con Apache y Nginx, servidores de bases de datos con MySQL y PostgreSQL, y servidores de aplicaciones con Tomcat. Ademas, tengo experiencia en la gestion de usuarios, permisos y seguridad en sistemas Linux.";
 });
 
+function scrollNav() {
+    const navLinks = document.querySelectorAll('.navegacion-principal a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const sectionScroll = e.target.getAttribute('href');
+            const section = document.querySelector(sectionScroll);
+            section.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+}
+
+// Inicializar navegación suave
+scrollNav();
+
 
 
  
