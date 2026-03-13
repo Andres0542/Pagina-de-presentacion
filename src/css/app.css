@@ -401,9 +401,12 @@ footer {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   background-image: linear-gradient(to right, #4CB8B3, #fdda00);
   align-items: center;
   align-content: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 768px) {
   .header.fixed {
@@ -438,7 +441,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 30rem;
 }
 @media (min-width: 768px) {
   .navegacion-principal {
@@ -459,18 +462,18 @@ footer {
   color: #FFFFFF;
   text-align: center;
   padding: 4rem 2rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  place-items: center;
 }
 .inicio-contenedor {
-  width: 95%;
+  width: 100%;
   max-width: 120rem;
   margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .inicio-contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-  }
 }
 .inicio-imagen {
   width: 100px;
@@ -515,6 +518,12 @@ footer {
   max-width: 120rem;
   margin: 0 auto;
 }
+.stats-texto {
+  cursor: pointer;
+}
+.stats-texto:hover {
+  color: #fdda00;
+}
 .stats-contenedor {
   grid-template-rows: repeat(8, 1fr);
   gap: 5rem;
@@ -539,8 +548,9 @@ footer {
 
 .proyectos {
   display: grid;
-  text-align: center;
   grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  text-align: center;
 }
 
 .imagen-proyecto {
@@ -548,6 +558,13 @@ footer {
   height: 200px;
   background-size: cover;
   background-position: center;
+}
+.imagen-proyecto:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.imagen-proyecto {
   border-radius: 1rem;
 }
 .imagen-proyecto-compilador {
@@ -563,16 +580,22 @@ footer {
 .redes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
+  place-items: center;
 }
 .redes-contenedor {
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-  background-size: cover;
+  cursor: pointer;
+  height: 15rem;
+  width: 15rem;
   border-radius: 50%;
-  text-align: center;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aqua;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.redes-contenedor:hover {
+  transform: scale(1.1);
+  background-color: #fdda00;
 }
 
 /*# sourceMappingURL=app.css.map */

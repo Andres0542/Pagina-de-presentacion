@@ -13,6 +13,12 @@
     max-width: 120rem;
     margin: 0 auto;
 
+    &-texto {
+        cursor: pointer;
+        &:hover{
+            color: v.$amarillo;
+        }
+    }
 
     &-contenedor {
         grid-template-rows: repeat(8,1fr);
@@ -28,7 +34,6 @@
     background-color: #e5e5e5; // Color gris de fondo para lo no completado
     border-radius: 1rem; // Opcional: bordes redondeados
     margin-bottom: 2rem;
-    
     // 2. El Gradiente (común para todas)
     background-image: linear-gradient(to right, v.$verde, v.$amarillo);
     background-repeat: no-repeat;

@@ -26,9 +26,7 @@
             </nav>
         </div>
     </header>
-
-    <section class="fondo">
-        <div class="inicio contenedor-2caras">
+        <div class="inicio" id="Inicio"> <!-- contenedor-2caras-->
             <h2>Hola, soy <span>Anarchy Panty</span></h2>
             <div class="inicio-imagen"></div>
             
@@ -36,7 +34,7 @@
 
         <div class="intro">
             <h2>SOBRE MI</h2>
-            <div class="contenedor-2caras">
+            <div class="contenedor-2caras" id="Sobre-mi"> <!-- contenedor-2caras-->
                 <p>Soy un estudiante de ciencias de la computacion apasionado en la configuracion
                 de servidores y sistemas Linux, ademas de tener interes en la ciencia del
                 tratado y aprovechamiento de datos, especialmente aplicando metodos de
@@ -55,24 +53,24 @@
 
         <h2>ESTADISTICAS</h2>
         <div class="stats">
-            <div class="stats-contenedor">
-                <h4>Programacion web</h4>
+            <div class="stats-contenedor" id="Estadisticas">
+                <h4 id = 'web' class="stats-texto">Programacion web</h4>
                 <div class="stats-barra-50"></div>
                 <!-- Anadir barra 50%-->
-                <h4>Programacion con Python</h4>
+                <h4 id = 'python' class="stats-texto">Programacion con Python</h4>
                 <div class="stats-barra-75"></div>
                 <!-- Anadir barra 75%-->
-                <h4>Ciencias de Datos</h4>
+                <h4 id = 'datos' class="stats-texto">Ciencias de Datos</h4>
                 <div class="stats-barra-50"></div>
                 <!-- Anadir barra 50%-->
-                <h4>Configuracion de servidores Linux</h4>
+                <h4 id = 'linux' class="stats-texto">Configuracion de servidores Linux</h4>
                 <div class="stats-barra-75"></div>
                 <!-- Anadir barra 75%-->
             </div>
             <div>
-                <h2>Titulo default</h2>
+                <h2 id="titulo_stat">Titulo default</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ex accusantium, rem animi sit sunt ducimus esse tempora iure qui cumque assumenda vero, aut error officia et quia corrupti neque!</p>
+                <p id="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ex accusantium, rem animi sit sunt ducimus esse tempora iure qui cumque assumenda vero, aut error officia et quia corrupti neque!</p>
             </div>
             
 
@@ -80,41 +78,45 @@
         </div>
 
         <h2>PROYECTOS</h2>
-        <div class="proyectos">
+        <div class="proyectos" id="Proyectos">
             
             <div class="contenedor-proyecto">
-                <h6>Lenguaje de Estadistica basico</h6>
+                <h4>Lenguaje de Estadistica basico</h4>
                 <div class="imagen-proyecto imagen-proyecto-compilador"></div>
                 <img src="" alt="">
             </div>
 
             <div class="contenedor-proyecto">
-                <h6>Sistema de red IoT</h6>
+                <h4>Sistema de red IoT</h4>
                 <div class="imagen-proyecto imagen-proyecto-python"></div>
                 <img src="" alt="">
             </div>
 
             <div class="contenedor-proyecto">
-                <h6>Script de Machine Learning</h6>
+                <h4>Script de Machine Learning</h4>
                 <div class="imagen-proyecto imagen-proyecto-servidor"></div>
                 <img src="" alt="">
             </div>
         </div>
 
         <h2>CONTACTAME</h2>
-        <div class="redes">
-            <div class="redes-contenedor">
-                <a href="">GitHub</a>
-            </div>
+        <div class="redes" id="Contactame">
+            <a href="https://github.com/Andres0542">
+                <div class="redes-contenedor">
+                    <img src="./src/imagenes/github.svg" alt="GitHub">
+                </div>
+            </a>
 
-            <div class="redes-contenedor">
-                <a href="">LinkedIn</a>
-            </div>
+            <a href="https://www.linkedin.com/in/cerre%C3%B1o-zevallos-ra%C3%BAl-andr%C3%A9s-314569340/">
+                <div class="redes-contenedor">
+                    <img src="./src/imageneS/linkedin.svg" alt="LinkedIn">
+                </div>
+            </a>
         </div>
-    </section>
-
     <footer>
         <p>Todos los derechos reservados a Andres Cerreno</p>
     </footer>
 </body>
+
+<script src="src/js/funciones.js"></script>
 </html>
