@@ -506,6 +506,15 @@ footer {
   align-items: center;
   background-size: cover;
 }
+.sobremi-gif {
+  width: 100%;
+  max-width: 30rem;
+  height: 20rem;
+  background-image: url("../imagenes/tux.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .stats {
   text-align: center;
@@ -558,11 +567,27 @@ footer {
   height: 200px;
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+.imagen-proyecto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 1rem;
 }
 .imagen-proyecto:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+}
+.imagen-proyecto:hover::before {
+  opacity: 1;
 }
 .imagen-proyecto {
   border-radius: 1rem;
